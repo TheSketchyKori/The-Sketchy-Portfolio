@@ -94,18 +94,17 @@ if (lightbox) {
 
 // Keyboard
 
-document.addEventListener("keydown", e => {
+if (lightbox) {
 
-    if (!lightbox.classList.contains("show")) return;
+    document.addEventListener("keydown", e => {
 
-    if (e.key === "ArrowRight") nextImage();
+        if (!lightbox.classList.contains("show")) return;
 
-    if (e.key === "ArrowLeft") previousImage();
+        // the rest of your existing code stays exactly the same
 
-    if (e.key === "Escape")
-        lightbox.classList.remove("show");
+    });
 
-});
+}
 
 // Buttons
 
