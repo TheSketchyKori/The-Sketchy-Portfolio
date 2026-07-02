@@ -64,7 +64,9 @@ document.querySelectorAll(".panel-grid").forEach(grid => {
 
             showImage();
 
-            lightbox.classList.add("show");
+           if (lightbox) {
+            
+           } lightbox.classList.add("show");
 
         });
 
@@ -74,15 +76,21 @@ document.querySelectorAll(".panel-grid").forEach(grid => {
 
 // Close
 
-lightbox.addEventListener("click", e => {
+// Close
 
-    if (e.target === lightbox) {
+if (lightbox) {
 
-        lightbox.classList.remove("show");
+    lightbox.addEventListener("click", e => {
 
-    }
+        if (e.target === lightbox) {
 
-});
+            lightbox.classList.remove("show");
+
+        }
+
+    });
+
+}
 
 // Keyboard
 
@@ -101,21 +109,32 @@ document.addEventListener("keydown", e => {
 
 // Buttons
 
-document.querySelector(".left").addEventListener("click", e => {
+const leftArrow = document.querySelector(".left");
+const rightArrow = document.querySelector(".right");
 
-    e.stopPropagation();
+if (leftArrow) {
 
-    previousImage();
+    leftArrow.addEventListener("click", e => {
 
-});
+        e.stopPropagation();
 
-document.querySelector(".right").addEventListener("click", e => {
+        previousImage();
 
-    e.stopPropagation();
+    });
 
-    nextImage();
+}
 
-});
+if (rightArrow) {
+
+    rightArrow.addEventListener("click", e => {
+
+        e.stopPropagation();
+
+        nextImage();
+
+    });
+
+}
 
 // ==========================================
 // HERO IMAGE SUPPORT
