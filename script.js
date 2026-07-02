@@ -160,3 +160,16 @@ if (toggleButton && extraPanels) {
     });
 
 }
+
+const menuButton = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
+
+if(menuButton){
+
+menuButton.addEventListener("click",()=>{
+
+nav.classList.toggle("show");
+
+});
+
+}

@@ -196,6 +196,24 @@ nav a:hover {
   color: #c8922a;
 }
 
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:2px solid #C8922A;
+
+    color:#F2EAD3;
+
+    padding:10px 20px;
+
+    font-family:"Special Elite", cursive;
+
+    cursor:pointer;
+
+}
+
 /* ------------------ */
 /* MENU */
 /* ------------------ */
@@ -316,29 +334,6 @@ nav a:hover {
 /* MOBILE */
 /* ------------------ */
 
-@media (max-width: 900px) {
-  header {
-    flex-direction: column;
-
-    gap: 30px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-
-    gap: 18px;
-  }
-
-  .logo h1 {
-    font-size: 1.5rem;
-  }
-
-  .menu a {
-    font-size: 1rem;
-
-    padding: 16px 25px;
-  }
-}
 
 @keyframes glitch {
   0%,
@@ -1034,5 +1029,153 @@ nav a:hover {
 .hidden-panels.show{
 
     display:grid;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+.logo{
+
+    text-align:center;
+
+}
+
+.logo h1{
+
+    font-size:1.7rem;
+
+}
+
+.logo p{
+
+    font-size:.75rem;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+    margin:10px auto;
+
+}
+
+nav{
+
+    display:none;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    width:100%;
+
+    gap:15px;
+
+}
+
+nav.show{
+
+    display:flex;
+
+}
+
+.content{
+
+    margin:220px auto 60px;
+
+    padding:0 20px;
+
+}
+
+.page-title h1{
+
+    font-size:2.3rem;
+
+    letter-spacing:2px;
+
+}
+
+.about-section{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+.about-photo{
+
+    width:220px;
+
+}
+
+.about-text{
+
+    text-align:left;
+
+}
+
+.about-grid{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+.npc-box{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.npc-avatar{
+
+    width:150px;
+
+}
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+video{
+
+    width:100%;
+
+    height:auto;
+
+}
 
 }
