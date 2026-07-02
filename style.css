@@ -1179,3 +1179,48 @@ video{
 }
 
 }
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.page-footer{
+
+    margin-top:120px;
+    padding:60px 20px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(200,146,42,.25);
+
+}
+
+.footer-title{
+
+    font-family:"Special Elite", cursive;
+    font-size:1.4rem;
+    color:#C8922A;
+
+    margin-bottom:18px;
+
+}
+
+.footer-message{
+
+    color:#C0B39D;
+
+    margin-bottom:28px;
+
+    line-height:1.8;
+
+}
+
+.footer-credit{
+
+    font-size:.8rem;
+
+    color:#8B7C69;
+
+    letter-spacing:1px;
+
+}
